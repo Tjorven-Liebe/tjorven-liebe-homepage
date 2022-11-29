@@ -1,0 +1,10 @@
+{
+  "name": "tjorven-liebe",
+  "version": "1.0.0",
+  "dependencies": {
+
+  },
+  "directories": {
+    "lib": "assets/js"
+  }
+}
