@@ -1,13 +1,14 @@
 window.addEventListener("load", function () {
-    // loadAnimation()
+    loadAnimation()
     document.body.classList.remove("hid");
-    // setTimeout(() => {
-    //     endAnimation()
-    // }, 3000)
+    setTimeout(() => {
+        endAnimation()
+    }, 3000)
 })
 
 document.addEventListener("DOMContentLoaded", function () {
     // loadTheme()
+    load()
     showCookieMessage()
 })
 

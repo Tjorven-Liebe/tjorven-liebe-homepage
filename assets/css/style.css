@@ -3,10 +3,21 @@
     --active: #1a1c25;
     --disabled: #464b5d;
     --highlight: #1f2233;
-    --border: #0f111a;
+    --border: #2b2b37;
     --background-highlight: #181a1f;
     --font: #8f93a2;
     --button: #191a21;
+}
+
+.github_dark {
+    --background: #24292e;
+    --active: #2b3036;
+    --disabled: #6a737d;
+    --highlight: #444d56;
+    --border: #1b1f23;
+    --background-highlight: #2f363d;
+    --font: #e1e4e8;
+    --button: #1b1f23;
 }
 
 .arc_dark,
@@ -31,6 +42,28 @@
     --border: #DBDBDC;
     --font: #232324;
     --button: #dbdbdc;
+}
+
+.light_owl {
+    --background: #f0f0f0;
+    --background-highlight: #fbfbfb;
+    --active: #d3e8f8;
+    --disabled: #93a1a1;
+    --highlight: #cccccc;
+    --border: #d9d9d9;
+    --font: #403f53;
+    --button: #d9d9d9;
+}
+
+.night_owl {
+    --background: #011627;
+    --background-highlight: #0b2942;
+    --active: #13344f;
+    --disabled: #697098;
+    --highlight: #084d81;
+    --border: #122d42;
+    --font: #d6deeb;
+    --button: #0b253a;
 }
 
 .hid {
@@ -244,26 +277,21 @@ input:checked + .slider:before {
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 55px);
-    grid-template-rows: repeat(2, 55px);
+    grid-template-rows: repeat(4, 55px);
 }
 
 .color-switch {
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
     top: 5px; right: 2px;
 }
 
-.color-switch:hover .theme-item {
-    display: block;
-}
-
 .theme-item {
-    display: none;
     float: left;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid var(--highlight);
+    border: 2px solid var(--border);
 }
 
 .color-button:hover {
@@ -277,7 +305,13 @@ input:checked + .slider:before {
 .color-button {
     width: 40px;
     border-radius: 50%;
-    background: var(--highlight);
+    background: var(--background);
     border: 2px solid var(--border);
     height: 40px;
+}
+
+/* Title */
+.page-title {
+    margin-top: 10%;
+    text-align: center;
 }
